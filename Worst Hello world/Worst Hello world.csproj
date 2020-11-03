@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Worst_Hello_world</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WorstHelloWorld.Core\WorstHelloWorld.Core.csproj" />
+    <ProjectReference Include="..\WorstHelloWorld.Infrastructure\WorstHelloWorld.Infrastructure.csproj" />
+    <ProjectReference Include="..\WorstHelloWorld.Interface\WorstHelloWorld.Interface.csproj" />
+    <ProjectReference Include="..\WorstHelloWorld.SharedEntities\WorstHelloWorld.SharedEntities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
