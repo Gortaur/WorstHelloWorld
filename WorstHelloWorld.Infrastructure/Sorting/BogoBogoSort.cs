@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using WorstHelloWorld.Infrastructure.Exceptions;
@@ -76,13 +75,6 @@ namespace WorstHelloWorld.Infrastructure.Sorting
                 array[n] = array[k];
                 array[k] = temp;
             }
-        }
-
-        static int GetNextInt32(RNGCryptoServiceProvider rnd)
-        {
-            byte[] randomInt = new byte[4];
-            rnd.GetBytes(randomInt);
-            return Convert.ToInt32(randomInt[0]);
         }
     }
 }

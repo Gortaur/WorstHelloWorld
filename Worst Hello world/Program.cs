@@ -6,12 +6,7 @@ namespace Worst_Hello_world
     {
         static void Main()
         {
-            while (true)
-            {
-                Console.WriteLine(System.Console.ReadLine());
-            }
-            
-            //Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
