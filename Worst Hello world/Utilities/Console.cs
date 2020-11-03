@@ -28,9 +28,14 @@ namespace Worst_Hello_world.Utilities
 
         public static void WriteLine(string str)
         {
+            if (System.String.IsNullOrWhiteSpace(str)) 
+            {
+                Console.WriteLine("Write something, you, filthy casual!");
+                return;
+            }
             var cancellationTokenSource = new CancellationTokenSource();
             var cancellationToken = cancellationTokenSource.Token;
-            if (str.Length <= 0)
+            if (str.Length <= 5)
             {
                 OutputTask(str, cancellationToken).GetAwaiter().GetResult();
             }
